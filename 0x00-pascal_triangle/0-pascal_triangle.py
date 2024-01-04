@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 """pascal triangle"""
 
-
 def pascal_triangle(n):
     """
     a function that return pascal triangle.
     """
+    
     if n <= 0:
         return []
     
