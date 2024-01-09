@@ -1,1 +1,1 @@
-# [Title](lo) Lock :box:
+# Lock[box]
