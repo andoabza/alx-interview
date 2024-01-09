@@ -1,1 +1,1 @@
-# [Title](lockboxes) :box
+# [Title](lo) Lock:box:
