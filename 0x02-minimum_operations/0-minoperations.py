@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """minimum operations"""
 
+
 def minOperations(N):
     """return number to rech N"""
     if N <= 1:
