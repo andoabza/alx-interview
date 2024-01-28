@@ -8,6 +8,7 @@ count = 0
 size = 0
 status_codes = {200: 0, 301: 0, 400: 0, 401: 0, 403: 0, 404: 0, 405: 0, 500: 0}
 
+
 def print_stats():
     '''print stats'''
     print("File size: {}".format(size))
@@ -15,10 +16,12 @@ def print_stats():
         if status_codes[code] > 0:
             print("{}: {}".format(code, status_codes[code]))
 
+
 def signal_handler(sig, frame):
     '''handle signal'''
     print_stats()
     sys.exit(0)
+
 
 signal.signal(signal.SIGINT, signal_handler)
 
