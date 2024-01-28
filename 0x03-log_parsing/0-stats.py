@@ -20,7 +20,7 @@ def print_stats():
 def signal_handler(sig, frame):
     '''handle signal'''
     print_stats()
-    sys.exit(0)
+    sys.exit(1)
 
 
 signal.signal(signal.SIGINT, signal_handler)
@@ -41,5 +41,6 @@ try:
             except ValueError:
                 continue
 except KeyboardInterrupt:
-    print_stats()
     pass
+print_stats()
+    
