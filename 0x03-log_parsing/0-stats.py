@@ -41,6 +41,5 @@ try:
             except ValueError:
                 continue
 except KeyboardInterrupt:
+    print_stats()
     pass
-
-print_stats()
