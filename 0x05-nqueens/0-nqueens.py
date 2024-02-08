@@ -16,10 +16,12 @@ if N < 4:
     print("N must be at least 4")
     sys.exit(1)
 
+
 def solveNQ(N):
     '''solve N queens problem'''
     board = [-1 for i in range(N)]
     solveNQUtil(board, 0)
+
 
 def solveNQUtil(board, col):
     '''solve N queens problem'''
@@ -32,6 +34,7 @@ def solveNQUtil(board, col):
             board[col] = i
             solveNQUtil(board, col + 1)
             board[col] = -1
+
 
 def printSolution(board):
     '''print the solution'''
@@ -49,5 +52,6 @@ def isSafe(board, row, col):
         if board[i] is row or abs(i - col) is abs(board[i] - row):
             return False
     return True
+
 
 solveNQ(N)
