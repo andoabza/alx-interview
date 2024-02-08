@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 '''n queens algorithm'''
 import sys
 
@@ -49,4 +50,4 @@ def isSafe(board, row, col):
             return False
     return True
 
-solveNQ(N)    
+solveNQ(N)
