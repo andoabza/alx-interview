@@ -3,7 +3,7 @@
 const request = require('request');
 
 function getStarWarsCharacters (movieId) {
-  const url = `https://swapi-api.alx-tools.com/api/films/3/`;
+  const url = `https://swapi-api.alx-tools.com/api/films/${movieId}`;
 
   request({ url, json: true }, (error, response, body) => {
     if (!error && response.statusCode === 200) {
