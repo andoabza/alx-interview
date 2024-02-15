@@ -1,7 +1,7 @@
-//*#!/usr/bin/node
+#!/usr/bin/node
 /* star wars api */
 const request = require('request');
-//const arg = process.argv[2];
+const arg = process.argv[2];
 const url = 'https://swapi-api.alx-tools.com/api/films/' + arg;
 
 const CharacterUrl = () => {
