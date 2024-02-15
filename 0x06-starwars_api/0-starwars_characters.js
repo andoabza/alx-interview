@@ -7,10 +7,7 @@ function getStarWarsCharacters(movieId) {
 
     request({ url: url, json: true }, (error, response, body) => {
         if (!error && response.statusCode ===  200) {
-            // Check if the movie exists
             if (body.title) {
-                console.log(`Movie Title: ${body.title}`);
-                // Fetch each character URL and print the character name
                 body.characters.forEach((characterUrl, index) => {
                     request({ url: characterUrl, json: true }, (error, response, characterBody) => {
                         if (!error && response.statusCode ===  200) {
